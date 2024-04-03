@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../les style/styles.css">
+    <link rel="icon" href="../les_images/user-guide.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Inscription - Infrastructure Digitale</title>
+    <style>
+      form {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        max-width: 1300px;
+        width: 100%;
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input, select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+      button {
+        background-color: #4caf50;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      </style>
+</head>
+<body>
+    <header>
+        <h1>Inscription - Spécialité Infrastructure Digitale</h1>
+    </header>
+
+    <form action="process_inscription.php" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+    
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+    
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+    
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+        <button type="submit">S'inscrire</button>
+      </form>
+
+    <section id="cours">
+        <h2>Liste des Cours</h2>
+        <button class="cours-btn" ><a href="../cours/guide-de-soutien-metier-et-formation-infrastructure-digitale-v21092021-6156fae866d36 (1).pdf" style="text-decoration: none; color: aliceblue;">	Se situer au regard du métier et de la démarche de formation</a></button>
+        <button class="cours-btn"><a href="https://ofppt.info/wp-content/uploads/2021/10/m102-resume-theorique-6156faf90a3de-1.pdf" style="text-decoration: none; color: aliceblue;">	Comprendre les enjeux d’un système d’information</a></button>
+        <button class="cours-btn"><a href="https://ofppt.info/wp-content/uploads/2021/10/m103-resume-theorique-6156fb3f1813f-1.pdf" style="text-decoration: none; color: aliceblue;">Concevoir un réseau informatique</a></button>
+        <button class="cours-btn"><a href="../cours/resume-theorique-m104-2412-61d5b537758b7-3.pdf" style="text-decoration: none; color: aliceblue;">Fonctionnement du système d’exploitation</a></button>
+        <button class="cours-btn"><a href="../cours/resume-theorique-m105-provisoire-61af2c86a44d9.pdf" style="text-decoration: none; color: aliceblue;">Gérer une infrastructure virtualisée</a></button>
+        <button class="cours-btn"><a href="../cours/resume-theorique-m106-2004-6261bb9556a66.pdf" style="text-decoration: none; color: aliceblue;">Automatiser les tâches d’administration</a></button>
+        <button class="cours-btn"><a href="../cours/resume-theorique-m108-1105-627e24414a77f.pdf" style="text-decoration: none; color: aliceblue;">Développer une veille technologique</a></button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ismo Infrastructure Digitale</p>
+    </footer>
+</body>
+</html>

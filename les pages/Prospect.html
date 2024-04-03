@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Sectors</title>
+    <link rel="stylesheet" href="../les style/style.css">
+    <link rel="icon" href="../les_images/user-guide.png">
+</head>
+
+<body>
+    <section class="sector" id="development-digital">
+        <h2>Developpement Digital</h2>
+        <img src="../les_images/images/Developper.jpg" alt="">
+        <ul class="prospects">
+            <h3>Prospects</h3>
+            <li data-image-src="../les_images/images/Full-stack.jpeg">Web Developpement</li>
+            <li data-image-src="../les_images/images/Mobile.jpeg">Mobile App Developpement</li>
+            <li data-image-src="../les_images/images/Rv.jpeg">RV - RA</li>
+        </ul>
+    </section>
+
+    <section class="sector" id="digital-infrastructure">
+        <h2>Infrastructure Digital</h2>
+        <img src="../les_images/images/Infrastructure.jpg" alt="">
+        <ul class="prospects">
+            <h3>Prospects</h3>
+            <li data-image-src="../les_images/images/cloud.jpeg">Cloud Computing</li>
+            <li data-image-src="../les_images/images/Network-security.jpeg">Securité Internet</li>
+            <li data-image-src="../les_images/images/Data.jpeg">Gestion des données</li>
+        </ul>
+    </section>
+
+    <section class="sector" id="infographics">
+        <h2>Infographie</h2>
+        <img src="../les_images/images/Infographie.jpg" alt="">
+        <ul class="prospects">
+            <h3>Prospects</h3>
+            <li data-image-src="../les_images/images/Graphic-Design.jpeg">Conception Graphique</li>
+            <li data-image-src="../les_images/images/Visual.jpeg">Communication Visuelle</li>
+            <li data-image-src="../les_images/images/Brand.jpeg">Identité de marque</li>
+        </ul>
+    </section>
+    <script>
+        document.querySelectorAll('.prospects li').forEach(item => {
+            item.addEventListener('mouseenter', function () {
+                const imgSrc = this.getAttribute('data-image-src');
+                this.style.setProperty('--image-src', `url(${imgSrc})`);
+            });
+        });
+    </script>
+</body>
+
+</html>
